@@ -8,7 +8,7 @@ media_folder: "uploads" # Folder where user uploaded files should go
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "" # The path to the folder where the documents are stored
+    folder: "/" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
