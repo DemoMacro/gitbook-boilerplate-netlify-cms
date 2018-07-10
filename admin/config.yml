@@ -18,3 +18,41 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "string", required: false}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "README.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Blurb", name: blurb, widget: object, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Intro", name: intro, widget: object, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Products", name: products, widget: list, fields: [
+              {label: "Image", name: "image", widget: "image"},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Values", name: "values", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+      - file: "SUMMARY.md"
+        label: "Summary"
+        name: "Summary"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - label: 
+            name: Summary
+            widget: list
+            fields:
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Text
+                name: text
+                widget: text
