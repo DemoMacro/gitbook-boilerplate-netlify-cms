@@ -18,16 +18,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+  - name: "pages"
+    label: "Pages"
     files:
       - file: "README.md"
-        label: "README.md"
-        name: "README.md"
+        label: "Indro"
+        name: "Indroduction"
         default: "/README.md"
         fields:
           - {label: Body, name: body, widget: markdown}
       - file: "SUMMARY.md"
-        label: "README.md"
-        name: "README.md"
+        label: "Summary"
+        name: "Summary"
         default: "/SUMMARY.md"
         fields:
           - {label: Body, name: body, widget: markdown}
