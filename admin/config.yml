@@ -7,29 +7,16 @@ media_folder: "media" # Folder where user uploaded files should go
 # This line should *not* be indented
 publish_mode: editorial_workflow
 
-collections: # A list of collections the CMS should be able to edit
-  - name: "Post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+collections:
+  - name: "Post" # Used in routes, e.g., /admin/collections/blog
+    label: "post" # Used in the UI
     folder: "/" # The path to the folder where the documents are stored
-    sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}"
-    fields: # The fields each document in this collection have
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "README.md"
-        label: "Indro"
-        name: "Indroduction"
-        default: "/README.md"
-        fields:
-          - {label: Body, name: body, widget: markdown}
-      - file: "SUMMARY.md"
-        label: "Summary"
-        name: "Summary"
-        default: "/SUMMARY.md"
-        fields:
-          - {label: Body, name: body, widget: markdown}
