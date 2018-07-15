@@ -1,8 +1,8 @@
 ---
-title: NetlifyBook
+title: README
 ---
 
-# Introduction
+# NetlifyBook
 
 This is a book written in Gitbook and hosted with Netlify.
  
