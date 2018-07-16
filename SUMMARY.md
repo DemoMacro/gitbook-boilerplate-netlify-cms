@@ -1,6 +1,4 @@
----
-Summary
----
+title:SUMMARY
 
 # Summary
 
