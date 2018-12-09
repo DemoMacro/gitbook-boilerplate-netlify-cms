@@ -15,7 +15,10 @@ Let's get started with NetlifyBook in three steps.
 More info: [GitBook Help Center](https://help.gitbook.com/)
 
 ### 2.Deploy which repository you forked on Netlify
-
+```
+Build command: gitbook build
+Publish directory: _book
+```
 More info: [A Step-by-Step Guide: GitBook on Netlify](https://www.netlify.com/blog/2015/12/08/a-step-by-step-guide-gitbook-on-netlify/)
 
 ### 3.Add the Netlify Identity Widget
