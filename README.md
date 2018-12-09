@@ -15,15 +15,12 @@ Let's get started with NetlifyBook in three steps.
 More info: [GitBook Help Center](https://help.gitbook.com/)
 
 ### 2.Deploy which repository you forked on Netlify
-```
-Build command: vuepress gitbook build
-Publish directory: _book
-```
+
 More info: [A Step-by-Step Guide: GitBook on Netlify](https://www.netlify.com/blog/2015/12/08/a-step-by-step-guide-gitbook-on-netlify/)
 
 ### 3.Add the Netlify Identity Widget
 
-You'll need to add this to the ```<head>``` of your CMS index page at /admin/index.html, as well as the ```<head>``` of your site's main index page.We could include the script in your site using Netlify's Script Injection feature;
+You'll need to add this to the <head> of your CMS index page at /admin/index.html, as well as the <head> of your site's main index page.We could include the script in your site using Netlify's Script Injection feature;
 
 ```html
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
