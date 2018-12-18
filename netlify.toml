@@ -1,0 +1,3 @@
+[build]
+    command: "gitbook build"
+    Publish: "_book"

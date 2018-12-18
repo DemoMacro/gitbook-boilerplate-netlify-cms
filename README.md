@@ -15,6 +15,8 @@ Let's get started with NetlifyBook in three steps.
 More info: [GitBook Help Center](https://help.gitbook.com/)
 
 ### 2.Deploy which repository you forked on Netlify
+<!-- Markdown snippet -->
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/Gitbook-NetlifyCMS)
 ```
 Build command: gitbook build
 Publish directory: _book
