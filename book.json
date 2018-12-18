@@ -1,5 +1,9 @@
 {
     "title": "Gitbook-NetlifyCMS",
     "author": "Demo Macro",
-    "language": "zh-hans"
+    "plugins": [
+        "theme-faq",
+        "-lunr",
+        "search-pro@^2.0.2"
+    ]
 }

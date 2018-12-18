@@ -1,22 +1,19 @@
 ---
 title: README
 ---
+# Gitbook-NetlifyCMS
 
-# NetlifyBook
-
-This is a book written in Gitbook and hosted with Netlify.
+> This is a book written in Gitbook and hosted with Netlify.
 
 ### Quick Start
 
-Let's get started with NetlifyBook in three steps.
+Let's get started with Gitbook-NetlifyCMS in three steps.
 
-### 1.Fork [NetlifyBook](https://github.com/DemoMacro/NetlifyBook) on Github
+### 1.[Fork](https://github.com/DemoMacro/Gitbook-NetlifyCMS/fork) on Github
 
 More info: [GitBook Help Center](https://help.gitbook.com/)
 
-### 2.Deploy which repository you forked on Netlify
-<!-- Markdown snippet -->
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/Gitbook-NetlifyCMS)
+### 2.[Deploy](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/Gitbook-NetlifyCMS) to Netlify
 ```
 Build command: gitbook build
 Publish directory: _book
@@ -46,6 +43,6 @@ You'll need to add this to the ```<head>``` of your CMS index page at /admin/ind
 </script>
 ```
 
-### You are finished with NetlifyBook
+> You are finished with Gitbook-NetlifyCMS
 
-Now you can control site content in https://yoursite.netlify.com/admin/
+> Now you can control site content in https://yoursite.netlify.com/admin/
