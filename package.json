@@ -1,12 +1,7 @@
 {
   "name": "gitbook-netlifycms",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Demo Macro",
+  "private": true,
   "licenses": [
     {
       "type": "MIT",
@@ -17,6 +12,10 @@
       "url": "https://spdx.org/licenses/CC-BY-NC-SA-4.0.html"
     }
   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Demo Macro",
   "devDependencies": {
     "gitbook-cli": "^2.3.0"
   }
