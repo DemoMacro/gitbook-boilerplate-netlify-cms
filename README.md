@@ -3,7 +3,7 @@ title: README
 ---
 # Gitbook-NetlifyCMS
 
-![](https://img.shields.io/github/license/DemoMacro/Gitbook-NetlifyCMS.svg?style=flat)
+![GitHub](https://img.shields.io/github/license/DemoMacro/Gitbook-NetlifyCMS)
   
 > This is a book written in Gitbook and hosted with Netlify.
 
