@@ -1,13 +1,15 @@
 ---
 title: README
 ---
+
 # Gitbook-NetlifyCMS
 
 ![GitHub](https://img.shields.io/github/license/DemoMacro/Gitbook-NetlifyCMS)
-  
+
 > This is a book written in Gitbook and hosted with Netlify.
 
 <!-- Markdown snippet -->
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/Hexo-NetlifyCMS/)
 
 ### Quick Start
@@ -24,6 +26,7 @@ More info: [GitBook Help Center](https://help.gitbook.com/)
 Build command: gitbook build
 Publish directory: _book
 ```
+
 More info: [A Step-by-Step Guide: GitBook on Netlify](https://www.netlify.com/blog/2015/12/08/a-step-by-step-guide-gitbook-on-netlify/)
 
 ### Enable Identity and Git Gateway
@@ -37,21 +40,26 @@ Netlify's Identity and Git Gateway services allow you to manage CMS admin users 
 
 ### Add the Netlify Identity Widget
 
-You'll need to add this to the ```<head>``` of your CMS index page at /admin/index.html, as well as the ```<head>``` of your site's main index page.We could include the script in your site using Netlify's Script Injection feature;
+You'll need to add this to the `<head>` of your CMS index page at /admin/index.html, as well as the `<head>` of your site's main index page.We could include the script in your site using Netlify's Script Injection feature;
 
 ```html
 <!-- Include the script that enables Netlify Identity on this page. -->
-<script src="https://cdn.jsdelivr.net/npm/netlify-identity-widget@1/build/netlify-identity-widget.min.js" async defer></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/netlify-identity-widget@1/build/netlify-identity-widget.min.js"
+  async
+  defer
+></script>
 ```
- Add the following script before the closing body tag of your site's main index page using Netlify's Script Injection feature.
+
+Add the following script before the closing body tag of your site's main index page using Netlify's Script Injection feature.
 
 ```html
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
+    window.netlifyIdentity.on('init', (user) => {
       if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
         });
       }
     });
@@ -65,5 +73,5 @@ You'll need to add this to the ```<head>``` of your CMS index page at /admin/ind
 
 ## Donate
 
-* [Alipay](https://qr.alipay.com/fkx06887yqy4k3q5kemidbc)
-* [Paypal](https://paypal.me/DemoMacro)
+- [Alipay](https://qr.alipay.com/fkx06887yqy4k3q5kemidbc)
+- [Paypal](https://paypal.me/DemoMacro)
