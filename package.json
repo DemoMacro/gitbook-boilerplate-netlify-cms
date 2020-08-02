@@ -18,5 +18,10 @@
   "author": "Demo Macro",
   "devDependencies": {
     "gitbook-cli": "^2.3.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "trailingComma": "none"
   }
 }
