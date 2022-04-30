@@ -2,30 +2,25 @@
 title: README
 ---
 
-# Gitbook-NetlifyCMS
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-![GitHub](https://img.shields.io/github/license/DemoMacro/Gitbook-NetlifyCMS)
+# gitbook-boilerplate-netlify-cms
 
-> This is a book written in Gitbook and hosted with Netlify.
+![Netlify](https://img.shields.io/netlify/99309378-24da-4731-951c-2bf0e4d1dc08)
+![GitHub](https://img.shields.io/github/license/DemoMacro/gitbook-boilerplate-netlify-cms)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
-<!-- Markdown snippet -->
+> Gitbook boilerplate integrated with Netlify CMS, powered by Demo Macro.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/Hexo-NetlifyCMS/)
+[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/gitbook-boilerplate-netlify-cms&stack=cms)
 
-### Quick Start
+## Manual start
 
-Let's get started with Gitbook-NetlifyCMS step by step.
+### [Fork](https://github.com/DemoMacro/gitbook-boilerplate-netlify-cms/fork) on Github
 
-### [Fork](https://github.com/DemoMacro/Gitbook-NetlifyCMS/fork) on Github
+More info: [GitBook Toolchain Documentation](https://github.com/GitbookIO/gitbook/tree/master/docs)
 
-More info: [GitBook Help Center](https://help.gitbook.com/)
-
-### [Deploy](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/Gitbook-NetlifyCMS) to Netlify
-
-```
-Build command: gitbook build
-Publish directory: _book
-```
+### Deploy to Netlify
 
 More info: [A Step-by-Step Guide: GitBook on Netlify](https://www.netlify.com/blog/2015/12/08/a-step-by-step-guide-gitbook-on-netlify/)
 
@@ -36,41 +31,26 @@ Netlify's Identity and Git Gateway services allow you to manage CMS admin users 
 1. Go to **Settings > Identity**, and select **Enable Identity service**.
 2. Under **Registration preferences**, select **Open** or **Invite only**. In most cases, you want only invited users to access your CMS, but if you're just experimenting, you can leave it open for convenience.
 3. If you'd like to allow one-click login with services like Google and GitHub, check the boxes next to the services you'd like to use, under **External providers**.
-4. Scroll down to **Services > Git Gateway**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we're leaving the **Roles** field blank, which means any logged in user may access the CMS. For information on changing this, check the [Netlify Identity documentation](https://www.netlify.com/docs/identity/).
+4. Scroll down to **Services > Git Gateway**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we're leaving the **Roles** field blank, which means any logged in user may access the CMS.
 
-### Add the Netlify Identity Widget
+More info: [Git Gateway](https://docs.netlify.com/visitor-access/git-gateway/)
 
-You'll need to add this to the `<head>` of your CMS index page at /admin/index.html, as well as the `<head>` of your site's main index page.We could include the script in your site using Netlify's Script Injection feature;
+### Congratulations
 
-```html
-<!-- Include the script that enables Netlify Identity on this page. -->
-<script
-  src="https://cdn.jsdelivr.net/npm/netlify-identity-widget@1/build/netlify-identity-widget.min.js"
-  async
-  defer
-></script>
-```
+You can now manage the content of your website at https://yoursite.netlify.com/admin/.
 
-Add the following script before the closing body tag of your site's main index page using Netlify's Script Injection feature.
+## License
 
-```html
+[MIT](LICENSE) &copy; [Demo Macro](https://github.com/DemoMacro)
+
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('init', (user) => {
+    window.netlifyIdentity.on("init", user => {
       if (!user) {
-        window.netlifyIdentity.on('login', () => {
-          document.location.href = '/admin/';
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
         });
       }
     });
   }
 </script>
-```
-
-> You are finished with Gitbook-NetlifyCMS
-
-> Now you can control site content in https://yoursite.netlify.com/admin/
-
-## License
-
-This Project is under the [MIT License](LICENSE).

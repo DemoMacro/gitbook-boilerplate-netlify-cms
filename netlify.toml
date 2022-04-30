@@ -6,3 +6,6 @@
 
   # Default build command.
   command = "gitbook build"
+
+[template.environment]
+  NODE_VERSION = "12.16.3"

@@ -1,27 +1,36 @@
 {
-  "name": "gitbook-netlifycms",
+  "name": "gitbook-boilerplate-netlify-cms",
   "version": "0.0.0",
+  "description": "Gitbook templates integrated with Netlify CMS, powered by Demo Macro.",
   "private": true,
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://spdx.org/licenses/MIT.html"
-    },
-    {
-      "type": "CC-BY-NC-SA-4.0",
-      "url": "https://spdx.org/licenses/CC-BY-NC-SA-4.0.html"
-    }
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Demo Macro",
   "devDependencies": {
-    "gitbook-cli": "^2.3.0"
+    "gitbook-cli": "^2.3.2"
   },
-  "prettier": {
-    "singleQuote": true,
-    "bracketSpacing": false,
-    "trailingComma": "none"
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/gitbook-boilerplate-netlify-cms.git"
+  },
+  "keywords": [
+    "gitbook",
+    "boilerplate",
+    "netlify",
+    "netlify-cms"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/gitbook-boilerplate-netlify-cms/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/gitbook-boilerplate-netlify-cms#readme",
+  "engines": {
+    "node": "<=12.16.3"
   }
 }
