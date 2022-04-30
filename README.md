@@ -6,7 +6,7 @@ title: README
 
 # gitbook-boilerplate-netlify-cms
 
-![Netlify](https://img.shields.io/netlify/99309378-24da-4731-951c-2bf0e4d1dc08)
+![Netlify](https://img.shields.io/netlify/70a46fb7-d3ad-4210-b71b-2c16247c1062)
 ![GitHub](https://img.shields.io/github/license/DemoMacro/gitbook-boilerplate-netlify-cms)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
