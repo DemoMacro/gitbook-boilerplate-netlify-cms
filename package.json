@@ -4,7 +4,7 @@
   "description": "Gitbook boilerplate integrated with Netlify CMS, powered by Demo Macro.",
   "private": true,
   "devDependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "2.3.2"
   },
   "scripts": {
     "serve": "gitbook serve",
