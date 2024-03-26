@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/DemoMacro/gitbook-boilerplate-netlify-cms#readme",
   "engines": {
-    "node": "<=v12.22.12"
+    "node": "<=20.12.0"
   }
 }
